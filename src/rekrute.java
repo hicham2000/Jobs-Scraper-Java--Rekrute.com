@@ -51,10 +51,10 @@ public class rekrute {
                     Random random = new Random();
                     int index = random.nextInt(niveau_etude.length);
                     Elements description = emploi.select("#recruiterDescription p");
-//
+
                     String langue = "anglais›bon niveau français›courant";
                     String sitename="rekrute.com";
-//
+
                     data_V2.add(new data_V2(k,sitename, Postname.text(),description.text(), DateDePublication.first().text(),
                             Entreprise.text(),description.text(), region.text(), Competence.text(),
                             Type_de_contrat.text(),secteur.text(),experience.text(),niveau_etude[index],langue,nombre_de_poste,"https://www.rekrute.com"+lien.attr("href")));
